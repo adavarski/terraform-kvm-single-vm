@@ -2,6 +2,8 @@ ENV: Ubuntu 18.04, KVM
 
 Setup ENV:
 
+$ systemctl stop/disable apparmor
+
 /etc/libvirt/qemu.conf --> security_driver = "none" ; user = "root" ; group = "kvm" ---> systemctl restart libvirtd
 
 Installing Terraform libvirt Provider:
