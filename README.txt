@@ -6,12 +6,6 @@ Setup ENV:
 
 Installing Terraform libvirt Provider:
 
-The libvirt provide will require:
-
-libvirt 1.2.14 or newer
-latest golang version
-mkisofs is required to use the CloudInit feature.
-
 $ sudo apt install golang-go 
 
 $ export GOPATH=$HOME/go
