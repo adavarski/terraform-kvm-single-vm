@@ -19,9 +19,12 @@ terraform init ---> create $HOME/.terraform.d
 
 cd $HOME/.terraform.d; mkdir plugins; cp $GOPATH/bin/terraform-provider-libvirt $HOME/.terraform.d/plugins
 
-
 git clone https://github.com/adavarski/terraform-kvm-single-vm
 
 cd terraform-kvm-single-vm
 
 add your pub key to cloud_init.cfg and edit files for KVM specific env.
+
+terraform init
+
+terraform apply
